@@ -60,5 +60,17 @@
         console.log('Not a "g"');
       }
     });
+
+    let divs = document.querySelectorAll('div');
+     
+    function bubble(e) {
+      // `this` refers to the div that
+      // is triggering the current event handler.
+      console.log(this.firstChild.nodeValue.trim() + ' bubbled');
+    }
+     
+    for (let i = 0; i < divs.length; i++) {
+      divs[i].addEventListener('click', bubble);
+    }
   </script>
 </html>
