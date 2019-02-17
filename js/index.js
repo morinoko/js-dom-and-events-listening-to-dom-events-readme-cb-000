@@ -9,7 +9,7 @@ input.addEventListener('keydown', function(e) {
 });
 
 const input = document.querySelector('input');
- 
+
 input.addEventListener('keydown', function(e) {
   if (e.which === 71) {
     console.log('default prevented');
