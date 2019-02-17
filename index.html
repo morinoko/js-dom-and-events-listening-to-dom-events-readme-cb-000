@@ -66,6 +66,9 @@
     function bubble(e) {
       // `this` refers to the div that
       // is triggering the current event handler.
+
+      //e.stopPropagation(); Uncommenting this will prevent the event from
+      // propogating!
       console.log(this.firstChild.nodeValue.trim() + ' bubbled');
     }
 
